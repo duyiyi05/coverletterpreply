@@ -1,43 +1,52 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Duygu | Preply Cover Letter</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #fdf6f9;
-            max-width: 800px;
-            margin: 50px auto;
-            padding: 20px;
-            line-height: 1.6;
-        }
-        .card {
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-        }
-        h1 {
-            color: #d63384;
-        }
-    </style>
-</head>
-<body>
-    <div class="card">
-        <h1>Hi Preply 👋</h1>
-        <p>I’m Duygu, an English Linguistics graduate with 6+ years of teaching experience.</p>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Letter to Preply</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Special+Elite&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="scene">
+      <section class="envelope-wrap" aria-live="polite">
+        <h1 class="page-title">My Endless Affection</h1>
 
-        <p>I built this small web project as my interactive cover letter — combining professionalism, personality, and clarity.</p>
+        <div class="mail" id="mail">
+          <div class="mail-inner">
+            <article class="mail-face mail-front" aria-label="Envelope front side">
+              <div class="frame"></div>
+              <p class="to-line">To: Preply</p>
+              <p class="from-line">from Duygu Taş</p>
 
-        <h3>Why me?</h3>
-        <ul>
-            <li>Structured and engaging lessons</li>
-            <li>Strong communication skills</li>
-            <li>Supportive and confidence-focused approach</li>
-        </ul>
+              <div class="stamp" aria-label="İzmir postage stamp">
+                <p>İzmir Post</p>
+                <p>★ 2026 ★</p>
+              </div>
 
-        <p>Thank you for visiting 🌸</p>
-    </div>
-</body>
+              <button class="action" id="flipBtn" aria-label="Turn envelope to the back side">Click here</button>
+            </article>
+
+            <article class="mail-face mail-back" aria-label="Envelope back side">
+              <div class="back-flap" id="backFlap"></div>
+              <button class="action" id="openBtn" aria-label="Open envelope and pull letter">Click here</button>
+
+              <div class="letter" id="letter">
+                <div class="letter-paper">
+                  <h2>Dear Preply Team,</h2>
+                  <p>[I will add my cover letter content here later.]</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <p class="hint" id="hint">Step 1: Click “Click here” to turn the envelope.</p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
 </html>
