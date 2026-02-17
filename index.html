@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Letter to Preply</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Special+Elite&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="scene">
+      <section class="envelope-wrap" aria-live="polite">
+        <h1 class="page-title">My Endless Affection</h1>
+
+        <div class="mail" id="mail">
+          <div class="mail-inner">
+            <article class="mail-face mail-front" aria-label="Envelope front side">
+              <div class="frame"></div>
+              <p class="to-line">To: Preply</p>
+              <p class="from-line">from Duygu Taş</p>
+
+              <div class="stamp" aria-label="İzmir postage stamp">
+                <p>İzmir Post</p>
+                <p>★ 2026 ★</p>
+              </div>
+
+              <button class="action" id="flipBtn" aria-label="Turn envelope to the back side">Click here</button>
+            </article>
+
+            <article class="mail-face mail-back" aria-label="Envelope back side">
+              <div class="back-flap" id="backFlap"></div>
+              <button class="action" id="openBtn" aria-label="Open envelope and pull letter">Click here</button>
+
+              <div class="letter" id="letter">
+                <div class="letter-paper">
+                  <h2>Dear Preply Team,</h2>
+                  <p>[I will add my cover letter content here later.]</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <p class="hint" id="hint">Step 1: Click “Click here” to turn the envelope.</p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
