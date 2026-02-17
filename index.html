@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Letter to Preply</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Special+Elite&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="scene">
+      <section class="envelope-wrap" aria-live="polite">
+        <header class="top-row">
+          <h1 class="page-title">A little cover letter from me to you</h1>
+          <div class="top-actions">
+            <button class="side-btn" id="cvToggleBtn" type="button">Click for CV</button>
+            <button class="side-btn" id="contactToggleBtn" type="button">Click for Contact Info</button>
+          </div>
+        </header>
+
+        <section class="info-panel is-hidden" id="cvPanel" aria-label="CV pages">
+          <h2>My CV</h2>
+          <p class="panel-note">You can preview and download both pages below.</p>
+          <div class="cv-grid">
+            <figure class="cv-card">
+              <img src="assets/cv-page-1.svg" alt="CV page 1" />
+              <a href="assets/cv-page-1.svg" download>Download page 1</a>
+            </figure>
+            <figure class="cv-card">
+              <img src="assets/cv-page-2.svg" alt="CV page 2" />
+              <a href="assets/cv-page-2.svg" download>Download page 2</a>
+            </figure>
+          </div>
+        </section>
+
+        <section class="info-panel is-hidden" id="contactPanel" aria-label="Contact information">
+          <h2>Contact Info</h2>
+          <ul>
+            <li>Email: <a href="mailto:duygutasw@hotmail.com">duygutasw@hotmail.com</a></li>
+            <li>Phone: <a href="tel:+905423747442">+90 542 374 7442</a></li>
+            <li>Location: Türkiye</li>
+            <li>LinkedIn: <span>Add your LinkedIn URL here</span></li>
+          </ul>
+        </section>
+
+        <div class="mail" id="mail">
+          <div class="mail-inner">
+            <article class="mail-face mail-front" aria-label="Envelope front side">
+              <div class="frame"></div>
+              <p class="to-line">To: Preply</p>
+              <p class="from-line">from Duygu Taş</p>
+
+              <div class="stamp" aria-label="İzmir Saat Kulesi postage stamp">
+                <div class="stamp-inner">
+                  <p class="stamp-title">İZMİR<br /><strong>SAAT<br />KULESİ</strong></p>
+                  <div class="tower" aria-hidden="true">
+                    <span class="tower-top"></span>
+                    <span class="tower-body"></span>
+                    <span class="tower-base"></span>
+                  </div>
+                </div>
+              </div>
+
+              <button class="action" id="flipBtn" aria-label="Turn envelope to the back side">Click here</button>
+            </article>
+
+            <article class="mail-face mail-back" aria-label="Envelope back side">
+              <div class="back-flap" id="backFlap"></div>
+              <button class="action" id="openBtn" aria-label="Open envelope and pull letter">Click here</button>
+
+              <div class="letter" id="letter">
+                <div class="letter-paper">
+                  <h2>Dear Preply Team,</h2>
+                  <p>[I will add my cover letter content here later.]</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <p class="hint" id="hint">Step 1: Click “Click here” to turn the envelope.</p>
+        <button class="finish-btn is-hidden" id="finishBtn" aria-label="Finished reading and put the letter back">Finished reading it</button>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
