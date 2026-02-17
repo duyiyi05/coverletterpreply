@@ -25,16 +25,104 @@ body {
 }
 
 .envelope-wrap {
-  width: min(92vw, 850px);
+  width: min(92vw, 920px);
   text-align: center;
 }
 
+.top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.8rem;
+}
+
 .page-title {
-  margin: 0 0 1rem;
+  margin: 0;
   color: var(--ink-red);
   font-family: "Great Vibes", cursive;
-  font-size: clamp(2rem, 6vw, 4.2rem);
+  font-size: clamp(1.7rem, 4.8vw, 3.1rem);
   font-weight: 400;
+  text-align: left;
+}
+
+.top-actions {
+  display: flex;
+  gap: 0.55rem;
+}
+
+.side-btn,
+.action,
+.finish-btn {
+  padding: 0.68rem 0.85rem;
+  border: 2px solid var(--line-red);
+  background: #fff;
+  color: var(--line-red);
+  border-radius: 8px;
+  font-family: "Special Elite", serif;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease, opacity 0.3s ease;
+}
+
+.side-btn:hover,
+.action:hover,
+.finish-btn:hover {
+  background: #fff2ef;
+  transform: translateY(-2px);
+}
+
+.info-panel {
+  background: #fff9f2;
+  border: 2px solid #d9c5ab;
+  border-radius: 10px;
+  padding: 0.85rem;
+  margin-bottom: 0.9rem;
+  text-align: left;
+}
+
+.info-panel h2 {
+  margin: 0 0 0.4rem;
+  font-size: 1.1rem;
+}
+
+.panel-note {
+  margin: 0 0 0.6rem;
+  font-size: 0.88rem;
+  opacity: 0.85;
+}
+
+.cv-grid {
+  display: grid;
+  gap: 0.7rem;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+}
+
+.cv-card {
+  margin: 0;
+  display: grid;
+  gap: 0.4rem;
+}
+
+.cv-card img {
+  width: 100%;
+  border: 1px solid #ceb89d;
+  border-radius: 8px;
+  background: #f3f3f3;
+}
+
+.cv-card a {
+  color: #8f2f27;
+}
+
+.info-panel ul {
+  margin: 0;
+  padding-left: 1rem;
+  line-height: 1.7;
+}
+
+.is-hidden {
+  display: none;
 }
 
 .mail {
@@ -206,36 +294,11 @@ body {
     10px 0 0 0 #ff6148;
 }
 
-.action,
-.finish-btn {
-  padding: 0.85rem 1.05rem;
-  border: 2px solid var(--line-red);
-  background: #fff;
-  color: var(--line-red);
-  border-radius: 8px;
-  font-family: "Special Elite", serif;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background 0.2s ease, transform 0.2s ease, opacity 0.3s ease;
-}
-
 .action {
   position: absolute;
   right: 46px;
   bottom: 52px;
   z-index: 5;
-}
-
-.action:hover,
-.finish-btn:hover {
-  background: #fff2ef;
-  transform: translateY(-2px);
-}
-
-.action.is-hidden,
-.finish-btn.is-hidden {
-  opacity: 0;
-  pointer-events: none;
 }
 
 .mail-back {
@@ -305,6 +368,19 @@ body {
 .finish-btn {
   margin: 1rem auto 0;
   display: block;
+}
+
+@media (max-width: 920px) {
+  .top-row {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .top-actions {
+    width: 100%;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
 }
 
 @media (max-width: 820px) {

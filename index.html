@@ -12,7 +12,38 @@
   <body>
     <main class="scene">
       <section class="envelope-wrap" aria-live="polite">
-        <h1 class="page-title">A little cover letter from me to you</h1>
+        <header class="top-row">
+          <h1 class="page-title">A little cover letter from me to you</h1>
+          <div class="top-actions">
+            <button class="side-btn" id="cvToggleBtn" type="button">Click for CV</button>
+            <button class="side-btn" id="contactToggleBtn" type="button">Click for Contact Info</button>
+          </div>
+        </header>
+
+        <section class="info-panel is-hidden" id="cvPanel" aria-label="CV pages">
+          <h2>My CV</h2>
+          <p class="panel-note">You can preview and download both pages below.</p>
+          <div class="cv-grid">
+            <figure class="cv-card">
+              <img src="assets/cv-page-1.svg" alt="CV page 1" />
+              <a href="assets/cv-page-1.svg" download>Download page 1</a>
+            </figure>
+            <figure class="cv-card">
+              <img src="assets/cv-page-2.svg" alt="CV page 2" />
+              <a href="assets/cv-page-2.svg" download>Download page 2</a>
+            </figure>
+          </div>
+        </section>
+
+        <section class="info-panel is-hidden" id="contactPanel" aria-label="Contact information">
+          <h2>Contact Info</h2>
+          <ul>
+            <li>Email: <a href="mailto:duygutasw@hotmail.com">duygutasw@hotmail.com</a></li>
+            <li>Phone: <a href="tel:+905423747442">+90 542 374 7442</a></li>
+            <li>Location: Türkiye</li>
+            <li>LinkedIn: <span>Add your LinkedIn URL here</span></li>
+          </ul>
+        </section>
 
         <div class="mail" id="mail">
           <div class="mail-inner">

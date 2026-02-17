@@ -3,6 +3,10 @@ const flipBtn = document.getElementById("flipBtn");
 const openBtn = document.getElementById("openBtn");
 const finishBtn = document.getElementById("finishBtn");
 const hint = document.getElementById("hint");
+const cvToggleBtn = document.getElementById("cvToggleBtn");
+const contactToggleBtn = document.getElementById("contactToggleBtn");
+const cvPanel = document.getElementById("cvPanel");
+const contactPanel = document.getElementById("contactPanel");
 
 let isFlipped = false;
 let isOpened = false;
@@ -33,4 +37,14 @@ finishBtn.addEventListener("click", () => {
   openBtn.classList.remove("is-hidden");
   finishBtn.classList.add("is-hidden");
   hint.textContent = "Letter is back in the envelope.";
+});
+
+cvToggleBtn.addEventListener("click", () => {
+  cvPanel.classList.toggle("is-hidden");
+  contactPanel.classList.add("is-hidden");
+});
+
+contactToggleBtn.addEventListener("click", () => {
+  contactPanel.classList.toggle("is-hidden");
+  cvPanel.classList.add("is-hidden");
 });
