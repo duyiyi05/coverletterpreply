@@ -1,6 +1,7 @@
 const mail = document.getElementById("mail");
 const flipBtn = document.getElementById("flipBtn");
 const openBtn = document.getElementById("openBtn");
+const finishBtn = document.getElementById("finishBtn");
 const hint = document.getElementById("hint");
 
 let isFlipped = false;
@@ -11,8 +12,7 @@ flipBtn.addEventListener("click", () => {
 
   isFlipped = true;
   mail.classList.add("flipped");
-  flipBtn.disabled = true;
-  hint.textContent = "Step 2: Click “Click here” again to open and pull out your letter.";
+  hint.textContent = "Step 2: Click “Click here” to take the letter out.";
 });
 
 openBtn.addEventListener("click", () => {
@@ -20,6 +20,17 @@ openBtn.addEventListener("click", () => {
 
   isOpened = true;
   mail.classList.add("opened");
-  openBtn.disabled = true;
-  hint.textContent = "Your interactive letter is ready — you can replace the placeholder text anytime.";
+  openBtn.classList.add("is-hidden");
+  finishBtn.classList.remove("is-hidden");
+  hint.textContent = "Read your letter, then click “Finished reading it” below.";
+});
+
+finishBtn.addEventListener("click", () => {
+  if (!isOpened) return;
+
+  isOpened = false;
+  mail.classList.remove("opened");
+  openBtn.classList.remove("is-hidden");
+  finishBtn.classList.add("is-hidden");
+  hint.textContent = "Letter is back in the envelope.";
 });

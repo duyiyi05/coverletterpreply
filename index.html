@@ -12,7 +12,7 @@
   <body>
     <main class="scene">
       <section class="envelope-wrap" aria-live="polite">
-        <h1 class="page-title">My Endless Affection</h1>
+        <h1 class="page-title">A little cover letter from me to you</h1>
 
         <div class="mail" id="mail">
           <div class="mail-inner">
@@ -21,9 +21,15 @@
               <p class="to-line">To: Preply</p>
               <p class="from-line">from Duygu Taş</p>
 
-              <div class="stamp" aria-label="İzmir postage stamp">
-                <p>İzmir Post</p>
-                <p>★ 2026 ★</p>
+              <div class="stamp" aria-label="İzmir Saat Kulesi postage stamp">
+                <div class="stamp-inner">
+                  <p class="stamp-title">İZMİR<br /><strong>SAAT<br />KULESİ</strong></p>
+                  <div class="tower" aria-hidden="true">
+                    <span class="tower-top"></span>
+                    <span class="tower-body"></span>
+                    <span class="tower-base"></span>
+                  </div>
+                </div>
               </div>
 
               <button class="action" id="flipBtn" aria-label="Turn envelope to the back side">Click here</button>
@@ -44,6 +50,7 @@
         </div>
 
         <p class="hint" id="hint">Step 1: Click “Click here” to turn the envelope.</p>
+        <button class="finish-btn is-hidden" id="finishBtn" aria-label="Finished reading and put the letter back">Finished reading it</button>
       </section>
     </main>
 
