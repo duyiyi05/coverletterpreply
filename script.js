@@ -70,10 +70,12 @@ finishBtn.addEventListener("click", () => {
   if (!isOpened) return;
 
   isOpened = false;
+  isFlipped = false;
   mail.classList.remove("opened");
+  mail.classList.remove("flipped");
   openBtn.classList.remove("is-hidden");
   finishBtn.classList.add("is-hidden");
-  hint.textContent = "Letter is back in the envelope.";
+  hint.textContent = "Letter is back in the envelope. Click “Click here” to turn it again.";
 });
 
 cvToggleBtn.addEventListener("click", () => {
