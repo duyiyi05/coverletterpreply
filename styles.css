@@ -304,6 +304,8 @@ body {
   border: 1px solid #c9b9a5;
   border-radius: 8px;
   min-height: 260px;
+  max-height: 58vh;
+  overflow: auto;
   padding: 1.35rem;
   text-align: left;
   box-shadow: 0 10px 20px rgb(0 0 0 / 0.16);
@@ -319,6 +321,7 @@ body {
 
 .letter-paper p {
   line-height: 1.8;
+  margin: 0 0 0.9rem;
 }
 
 .hint {
