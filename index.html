@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Letter to Preply</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Special+Elite&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="scene">
+      <section class="envelope-wrap" aria-live="polite">
+        <header class="top-row">
+          <h1 class="page-title">A little cover letter from me to you</h1>
+          <div class="top-actions">
+            <button class="side-btn" id="cvToggleBtn" type="button">Click for CV</button>
+            <button class="side-btn" id="contactToggleBtn" type="button">Click for Contact Info</button>
+          </div>
+        </header>
+
+        <section class="info-panel is-hidden" id="cvPanel" aria-label="CV pages">
+          <h2>My CV</h2>
+          <p class="panel-note">Please <a href="https://drive.google.com/drive/folders/1sfjc63od22sRVrkDV3pPgdTDyfaEP0uB?usp=drive_link" target="_blank" rel="noopener noreferrer">click here for PDF Drive link</a>.</p>
+          <div class="cv-grid">
+            <figure class="cv-card">
+              <img id="cvImg1" alt="CV preview" />
+              <a id="cvDownload1" download="DuyguTas-CV-preview.jpg">Download image</a>
+            </figure>
+          </div>
+        </section>
+
+        <section class="info-panel is-hidden" id="contactPanel" aria-label="Contact information">
+          <h2>Contact Info</h2>
+          <ul>
+            <li>Email: <a href="mailto:duygutasw@hotmail.com">duygutasw@hotmail.com</a></li>
+            <li>Phone: <a href="tel:+905423747442">+90 542 374 7442</a></li>
+            <li>Location: Türkiye</li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/duygu-ta%C5%9F-%E6%9D%9C%E4%BE%9D%E4%BE%9D/" target="_blank" rel="noopener noreferrer">Duygu TAŞ 杜依依</a></li>
+          </ul>
+        </section>
+
+        <div class="mail" id="mail">
+          <div class="mail-inner">
+            <article class="mail-face mail-front" aria-label="Envelope front side">
+              <div class="frame"></div>
+              <p class="to-line">To: Preply</p>
+              <p class="from-line">from Duygu Taş</p>
+
+              <div class="stamp" aria-label="Doodle stamp: İzmir Türkiye">
+                <div class="stamp-inner">
+                  <p class="stamp-title">İZMİR</p>
+                  <p class="stamp-sub">/ TÜRKİYE</p>
+                </div>
+              </div>
+
+              <button class="action" id="flipBtn" aria-label="Turn envelope to the back side">Click here</button>
+            </article>
+
+            <article class="mail-face mail-back" aria-label="Envelope back side">
+              <div class="back-flap" id="backFlap"></div>
+              <button class="action" id="openBtn" aria-label="Open envelope and pull letter">Click here</button>
+
+              <div class="letter" id="letter">
+                <div class="letter-paper">
+                  <h2>Dear Preply Team,</h2>
+                  <p>I have always been in love with language.</p>
+                  <p>Not just speaking it, but studying it, understanding why one word builds connection while another creates distance. Linguistics was never simply an academic subject for me; it was a way of observing the world and the invisible threads that connect people through meaning.</p>
+                  <p>Over time, that curiosity became a craft. I sometimes joke that I became a “localization wizard.” Not because I perform tricks but because translating one idea from one language into another, while preserving its tone, intent, and emotional weight, has always felt like a quiet kind of magic.</p>
+                  <p>And the first time that quiet magic became real for me was shortly after I graduated.</p>
+                  <p>My first student found me through Preply.</p>
+                  <p>That lesson became my first income as a linguist. With that money, I bought myself a simple mug which is a small milestone that I still keep today. It reminds me of the moment language stopped being theoretical and became responsibility. It became trust placed in me by someone I had never met before. It became proof that words could build connection across distance.</p>
+                  <p>What stayed with me from that experience was something simple: progress does not happen in one perfect moment. It happens lesson by lesson. Conversation by conversation.</p>
+                  <p>In many ways, I grew alongside the idea that practice makes it perfect. Not as a slogan, but as something lived. Every session refined my teaching. Every piece of feedback improved my clarity. Every small adjustment strengthened trust.</p>
+                  <p>As my career evolved, my focus moved beyond crafting individual sentences and into strengthening the systems behind them. Working with multilingual vendors, building QA frameworks, conducting root cause analysis, and maintaining linguistic assets taught me that quality is not a final checkpoint. It is infrastructure. It lives in feedback loops, preventative standards, and aligned ecosystems that make continuous improvement possible.</p>
+                  <p>Using Preply as both a tutor and a learner deepened that belief. I experienced how subtle wording influences motivation and retention. I saw how feedback mechanisms scale quality across markets. It shifted my thinking from “Is this translation correct?” to “Is this ecosystem strong enough to sustain trust over time?”</p>
+                  <p>Localization quality, to me, is not about control. It is about stewardship, protecting clarity and confidence so that every learner and tutor, regardless of language, experiences the same opportunity to grow.</p>
+                  <p>This is the first time I have chosen to present my application in this way. I wanted it to reflect not only my experience, but how I think; with care, structure, and intention. In many ways, building this piece mirrors how I approach localization quality itself: thoughtfully, deliberately, and with respect for the reader.</p>
+                  <p>Preply was part of my beginning.</p>
+                  <p>Strengthening the systems that allow practice to become progress - across languages, cultures, and millions of learners - is the work I am ready to do.</p>
+                  <p>Best Regards,<br />Duygu TAŞ</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <p class="hint" id="hint">Step 1: Click “Click here” to turn the envelope.</p>
+        <button class="finish-btn is-hidden" id="finishBtn" aria-label="Finished reading and put the letter back">Finished reading it</button>
+      </section>
+    </main>
+
+
+      <div class="cv-zoom-modal is-hidden" id="cvZoomModal" role="dialog" aria-modal="true" aria-label="Zoomed CV preview">
+        <button class="cv-zoom-close" id="cvZoomClose" aria-label="Close zoomed CV">×</button>
+        <img id="cvZoomImage" alt="Zoomed CV preview" />
+      </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
