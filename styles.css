@@ -151,9 +151,11 @@ body {
   border: 3px solid var(--line-red);
   border-radius: 10px;
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   box-shadow: 0 12px 24px rgb(0 0 0 / 0.18);
   overflow: hidden;
   pointer-events: none;
+  transition: opacity 0.35s ease;
 }
 
 .mail-front {
@@ -166,6 +168,21 @@ body {
 
 .mail.flipped .mail-back {
   pointer-events: auto;
+}
+
+.mail:not(.flipped) .mail-back {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.mail.flipped .mail-front {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.mail.flipped .mail-back {
+  visibility: visible;
+  opacity: 1;
 }
 
 .mail.opened .mail-back {
