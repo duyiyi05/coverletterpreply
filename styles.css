@@ -370,6 +370,47 @@ body {
   display: block;
 }
 
+
+.cv-card img {
+  cursor: zoom-in;
+}
+
+
+.cv-zoom-modal.is-hidden {
+  display: none;
+}
+.cv-zoom-modal {
+  position: fixed;
+  inset: 0;
+  background: rgb(0 0 0 / 0.82);
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+  z-index: 1000;
+}
+
+.cv-zoom-modal img {
+  max-width: min(95vw, 1200px);
+  max-height: 88vh;
+  border-radius: 10px;
+  border: 2px solid #f5e6d2;
+  box-shadow: 0 20px 35px rgb(0 0 0 / 0.45);
+}
+
+.cv-zoom-close {
+  position: fixed;
+  top: 18px;
+  right: 22px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2px solid #f5e6d2;
+  background: #8f2f27;
+  color: #fff;
+  font-size: 1.45rem;
+  cursor: pointer;
+}
+
 @media (max-width: 920px) {
   .top-row {
     align-items: flex-start;
